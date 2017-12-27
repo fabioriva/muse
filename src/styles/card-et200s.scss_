@@ -1,0 +1,48 @@
+$left-id: 10px;
+$left-st-1: 10px;
+$left-st-2: 50px;
+$left-nr-1: 22px;
+$left-nr-2: 62px;
+
+$top-id: 25px;
+$top-1: 25px;
+$top-2: 203px;
+
+#r#{$rack}-c#{$card}-b#{$b} { left: 10px; top: 172px; }
+
+@for $bit from 0 through 7 {
+  #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+    left: $left-id;
+    top: $top-id;
+  }
+  $top-id: $top-id + $top_offset;
+  @if($bit == 0 or $bit%2 == 0) {
+    // #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+    //   left: $left-id-1;
+    //   top: $top-1;
+    // }
+    #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+      left: $left-st-1;
+      top: $top-2;
+    }
+    #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+      left: $left-nr-1;
+      top: $top-2;
+    }
+  } @else {
+    // #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+    //   left: $left-id-2;
+    //   top: $top-1;
+    // }
+    #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+      left: $left-st-2;
+      top: $top-2;
+    }
+    #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+      left: $left-nr-2;
+      top: $top-2;
+    }
+    $top-1: $top-1 + $top_offset;
+    $top-2: $top-2 + $top_offset;
+  }    
+}

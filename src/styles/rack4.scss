@@ -1,0 +1,60 @@
+$top-offset: 17px;
+$top-card: 1px;
+$left-card-01: 1px;
+$left-card-02: 162px;
+$left-card-03: 323px;
+$left-card-04: 484px;
+$left-card-05: 645px;
+$left-card-06: 806px;
+/**
+ * Rack 04
+ */
+ $rack: 4;
+/**
+ * Card 01
+ */
+$card: 1;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-01;
+  top: 1px;
+}
+$min: 0;
+$max: 3;
+@import "card-et200m.scss_";
+/**
+ * Card 02
+ */
+$card: 2;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-02;
+  top: 1px;
+}
+$min: 0;
+$max: 3;
+@import "card-et200m.scss_";
+/**
+ * Card 03
+ */
+$card: 3;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-03;
+  top: 1px;
+}
+$min: 0;
+$max: 3;
+@import "card-et200m.scss_";
+/**
+ * Card 04
+ */
+$card: 4;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-04;
+  top: 1px;
+}
+$min: 0;
+$max: 1;
+@import "card-et200m.scss_";

@@ -1,0 +1,24 @@
+.col-hidden {
+  display: none
+}
+.col-success {
+  background: #dff0d8;
+  color: #3c763d;
+}
+.col-info {
+  background: #d9edf7;
+  color: #31708f;
+}
+.col-warning {
+  background: #fcf8e3;
+  color: #8a6d3b;
+}
+.col-danger {
+  background: #f2dede;
+  color: #a94442;
+}
+.history-container {
+ display: flex;
+ justify-content: space-between;
+ margin: 12px 0;
+}

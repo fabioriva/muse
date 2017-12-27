@@ -1,0 +1,90 @@
+@for $b from $min through $max {
+  @if($b == 0) {
+    $left-id: 34px;
+    $left-st: 22px;
+    $left-nr: 10px;
+    $top: 23px;
+    #r#{$rack}-c#{$card}-b#{$b} { left: 10px; top: 159px; }
+    @for $bit from 0 through 7 {
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+        left: $left-id;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+        left: $left-st;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+        left: $left-nr;
+        top: $top;
+      }
+      $top: $top + $top_offset;
+    }
+  }
+  @if($b == 1) {
+    $left-id: 34px;
+    $left-st: 22px;
+    $left-nr: 10px;
+    $top: 193px;
+    #r#{$rack}-c#{$card}-b#{$b} { left: 10px; top: 176px; }
+    @for $bit from 0 through 7 {
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+        left: $left-id;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+        left: $left-st;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+        left: $left-nr;
+        top: $top;
+      }
+      $top: $top + $top_offset;
+    }
+  }
+  @if($b == 2) {
+    $left-id: 78px;
+    $left-st: 123px;
+    $left-nr: 135px;
+    $top: 23px;
+    #r#{$rack}-c#{$card}-b#{$b} { left: 78px; top: 159px; }
+    @for $bit from 0 through 7 {
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+        left: $left-id;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+        left: $left-st;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+        left: $left-nr;
+        top: $top;
+      }
+      $top: $top + $top_offset;
+    }
+  }
+  @if($b == 3) {
+    $left-id: 78px;
+    $left-st: 123px;
+    $left-nr: 135px;
+    $top: 193px;
+    #r#{$rack}-c#{$card}-b#{$b} { left: 78px; top: 176px; }
+    @for $bit from 0 through 7 {
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-id {
+        left: $left-id;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-st {
+        left: $left-st;
+        top: $top;
+      }
+      #r#{$rack}-c#{$card}-b#{$b}-i#{$bit}-nr {
+        left: $left-nr;
+        top: $top;
+      }
+      $top: $top + $top_offset;
+    }
+  }
+}

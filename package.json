@@ -1,0 +1,63 @@
+{
+  "name": "parking-manager",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Parking Manager",
+  "author": {
+    "name": "Fabio Riva",
+    "email": "f.riva@sotefin.com",
+    "url": "http://github.com/f.riva"
+  },
+  "homepage": "./",
+  "main": "main.js",
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "all": "concurrently --kill-others \"npm run start\" \"npm run electron-dev\"",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "postinstall": "install-app-deps"
+  },
+  "build": {
+    "appId": "com.electron.pm",
+    "productName": "Parking Manager",
+    "copyright": "Copyright © 2017-present Sotefin SA",
+    "directories": {
+      "buildResources": "buildResources"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "antd": "^2.13.10",
+    "async": "^2.6.0",
+    "node-snap7": "^0.4.0",
+    "nuka-carousel": "^3.0.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "recharts": "^1.0.0-beta.5",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.6.2",
+    "concurrently": "^3.5.0",
+    "electron": "^1.7.9",
+    "electron-builder": "19.37.2",
+    "node-sass-chokidar": "0.0.3",
+    "react-app-rewired": "^1.3.5",
+    "standard": "^10.0.3"
+  }
+}

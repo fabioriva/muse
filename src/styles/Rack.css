@@ -1,0 +1,174 @@
+@import 'rack1.css';
+@import 'rack2.css';
+@import 'rack3.css';
+@import 'rack4.css';
+@import 'rack5.css';
+@import 'rack6.css';
+@import 'rack7.css';
+@import 'rack8.css';
+@import 'rack9.css';
+@import 'rack10.css';
+@import 'rack11.css';
+
+.ant-tabs {
+    height: 436px;
+}
+
+.rack-container {
+    position: relative;
+    background-color: #c0c0c0;
+    border: 1px solid #000000;
+    height: 364px;
+    width: 80%;
+    left: 0px;
+    top: 20px;
+    text-align: center;
+}
+.rack {
+    color: #808080;
+    font-family: "Arial", Sans-Serif;
+    font-size: 48px;
+    font-weight: 600;
+    vertical-align: middle;
+    line-height: 364px;
+}
+/* ET200M */
+.card-et200m {
+    position: absolute;
+    border: 1px solid #000000;
+    height: 360px;
+    width: 160px;
+    background-color: #505050;
+    color: #000000;
+    /*font-family: "Arial", Sans-Serif;
+    font-size: 0.8em;*/
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+.title-et200m {
+    height: 18px;
+    color: #FFFF00;
+}
+.label-et200m {
+    position: absolute;
+    height: 18px;
+    width: 69px;
+    background-color: #FFFF00;
+    border: 1px solid #000000;
+    font-size: 14px;
+}
+.type-et200m {
+    position: absolute;
+    right: 10px;
+    top: 342px;
+    height: 18px;
+    color: #F0F0F0;
+    font-family: "Arial", Sans-Serif;
+    font-size: 12px;
+    text-align: center;
+
+}
+.bit-et200m-id {
+    position: absolute;
+    line-height: 18px;
+    height: 18px;
+    width: 45px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 0.78em;
+    cursor: help;
+}
+.bit-et200m-st {
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    background-color: #C0C0C0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    cursor: help;
+}
+.bit-et200m-nr {
+    position: absolute;
+    line-height: 18px;
+    height: 18px;
+    width: 12px;
+    background-color: #E0E0E0;
+    border: 1px solid #000000;
+    cursor: help;
+}
+
+/* ET200S */
+.card-et200s {
+    position: absolute;
+    border: 1px solid #000000;
+    height: 360px;
+    width: 88px;
+    background-color: #505050;
+    color: #000000;
+    /*font-family: "Arial", Sans-Serif;
+    font-size: 0.8em;*/
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+.title-et200s {
+    height: 18px;
+    color: #ffff00;
+}
+.label-et200s {
+    position: absolute;
+    height: 18px;
+    width: 65px;
+    background-color: #FFFF00;
+    border: 1px solid #000000;
+    font-size: 14px;
+}
+.type-et200s {
+    position: absolute;
+    left: 4px;
+    top: 342px;
+    height: 18px;
+    color: #F0F0F0;
+    font-family: "Arial", Sans-Serif;
+    font-size: 0.58em;
+    text-align: left;
+}
+
+.bit-et200s-id {
+    position: absolute;
+    line-height: 18px;
+    height: 18px;
+    width: 65px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 0.78em;
+    /* cursor: help; */
+}
+.bit-et200s-st {
+    position: absolute;
+    height: 18px;
+    width: 12px;
+    background-color: #C0C0C0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    /* cursor: help; */
+}
+.bit-et200s-nr {
+    position: absolute;
+    line-height: 18px;
+    height: 18px;
+    width: 12px;
+    background-color: #E0E0E0;
+    border: 1px solid #000000;
+    /*font-weight: bold;*/
+    /* cursor: help; */
+}
+
+.bit-false {
+	background-color: #C0C0C0;
+}
+
+.bit-true {
+	background-color: #00FF00;
+}

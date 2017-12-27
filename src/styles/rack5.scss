@@ -1,0 +1,129 @@
+$top-offset: 17px;
+$top-card: 1px;
+
+$left-card-s-01: 1px;
+$left-card-s-02: 90px;
+$left-card-s-03: 179px;
+$left-card-s-04: 268px;
+$left-card-s-05: 357px;
+$left-card-s-06: 446px;
+$left-card-s-07: 535px;
+$left-card-s-08: 624px;
+$left-card-s-09: 713px;
+$left-card-s-10: 802px;
+$left-card-s-11: 891px;
+$left-card-s-12: 980px;
+/**
+ * Rack 05
+ */
+$rack: 5;
+/**
+ * Card 01
+ */
+$card: 1;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-01;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 02
+ */
+$card: 2;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-02;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 03
+ */
+$card: 3;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-03;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 04
+ */
+$card: 4;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-04;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 05
+ */
+$card: 5;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-05;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 06
+ */
+$card: 6;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-06;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 07
+ */
+$card: 7;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-07;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 08
+ */
+$card: 8;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-08;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 09
+ */
+$card: 9;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-09;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
+/**
+ * Card 10
+ */
+$card: 10;
+#r#{$rack}-c#{$card}
+{
+  left: $left-card-s-10;
+  top: 1px;
+}
+$b: 0;
+@import "card-et200s.scss_";
