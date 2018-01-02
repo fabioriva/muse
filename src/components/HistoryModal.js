@@ -99,14 +99,14 @@ const HistoryModal = connect((state) => {
 })(Form.create({
   mapPropsToFields (props) {
     return {
-      range: {
+      range: Form.createFormField({
         ...props.range,
         value: props.range.value
-      },
-      filter: {
+      }),
+      filter: Form.createFormField({
         ...props.filter,
         value: props.filter.value
-      }
+      })
     }
   },
   onFieldsChange (props, fields) {

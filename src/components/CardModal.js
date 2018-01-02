@@ -154,22 +154,22 @@ const CardModal = connect((state) => {
   mapPropsToFields (props) {
     console.log(props.timeFrom.value, typeof props.timeFrom.value)
     return {
-      card: {
+      card: Form.createFormField({
         ...props.card,
         value: props.card.value
-      },
-      code: {
+      }),
+      code: Form.createFormField({
         ...props.code,
         value: props.code.value
-      },
-      timeFrom: {
+      }),
+      timeFrom: Form.createFormField({
         ...props.timeFrom,
         value: moment(props.timeFrom.value, 'HH:mm:ss')
-      },
-      timeTo: {
+      }),
+      timeTo: Form.createFormField({
         ...props.timeTo,
         value: moment(props.timeTo.value, 'HH:mm:ss')
-      }
+      })
     }
   },
   onFieldsChange (props, fields) {
